@@ -1,0 +1,155 @@
+div {
+	position:absolute;
+	background-color: rgb(0,0,0)
+}
+
+.r {
+	left:0px;
+	width: 400px;
+	height:75 ;
+
+}
+
+.r1 {
+	width: 75px;
+	height: 400px ;
+	left: 0px;
+
+}
+
+.r2 {
+  top: 2px;
+  left: 396px;
+  width: 0;
+  height: 0;
+  border-left: 38px solid rgb(255, 255, 255);
+  border-right: 38px solid rgb(255, 255, 255);
+  border-bottom: 72px solid rgb(0, 0, 0);
+  transform:rotate(90deg);
+  transform-origin: center; 
+  
+   }
+
+ .r3 {top: 400px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border-left: 38px solid rgb(255, 255, 255);
+  border-right: 38px solid rgb(255, 255, 255);
+  border-bottom: 72px solid rgb(0, 0, 0);
+  transform:rotate(180deg);
+  transform-origin: center; 
+
+ }
+
+ .r4 {
+   top:-17px;
+   left:170px;
+   width: 5px;
+   height:500px;
+   transform:rotate(50deg);
+}
+
+ .r5 {
+  left:252px;
+  width:75px;
+  height:245px;
+  top:175px;
+  transform: rotate(-40deg);
+}
+
+
+.r6 {
+	top: 380px;
+  left: 350px;
+  width: 0;
+  height: 0;
+  border-left: 38px solid transparent;
+  border-right: 38px solid transparent;
+  border-bottom: 72px solid rgb(0, 0, 0);
+  transform:rotate(140deg);
+  background-color: transparent; 
+}
+
+
+
+
+
+
+
+.a1 {
+	width: 400px;
+	height: 75px ;
+	left: 700px;
+}
+
+.a2 {  top: 2px;
+  left: 650px;
+  width: 0;
+  height: 0;
+  border-left: 38px solid rgb(255, 255, 255);
+  border-right: 38px solid rgb(255, 255, 255);
+  border-bottom: 72px solid rgb(0, 0, 0);
+  transform:rotate(-90deg);
+  transform-origin: center;
+
+}
+
+.a3 { top: 2px;
+  left: 1095px;
+  width: 0;
+  height: 0;
+  border-left: 38px solid rgb(255, 255, 255);
+  border-right: 38px solid rgb(255, 255, 255);
+  border-bottom: 72px solid rgb(0, 0, 0);
+  transform:rotate(90deg);
+  transform-origin: center;
+}
+
+.a4 {
+	width: 75px;
+	height: 400px ;
+	left: 790px;
+	transform: rotate(25deg);
+
+}
+
+.a5 {
+	width: 75px;
+	height: 400px ;
+	left: 1000px;
+	transform: rotate(-25deg);
+}
+
+.a6 {
+	top:120px;
+   left:960px;
+   width: 5px;
+   height:225px;
+   transform: rotate(90deg);
+   }
+
+  .a7 {
+ 	 top: 375px;
+  	left: 1098px;
+  	width: 0;
+  	height: 0;
+  	border-left: 38px solid transparent;
+  	border-right: 38px solid transparent;
+  	border-bottom: 72px solid rgb(0, 0, 0);
+ 	transform:rotate(155deg);
+    background-color:transparent;
+  }
+
+  .a8 {
+  	 top: 374px;
+  	left: 692px;
+  	width: 0;
+  	height: 0;
+  	border-left: 38px solid transparent;
+  	border-right: 38px solid transparent;
+  	border-bottom: 72px solid rgb(0, 0, 0);
+ 	transform:rotate(-155deg);
+    background-color:transparent;
+
+  }
