@@ -399,3 +399,18 @@ div {
   transform-origin: center;
   background-color: transparent;
 }
+
+
+
+.description {
+  color:rgb(18,100,200);
+  width: 40%;
+  position:absolute;
+  left:75px;
+  top:200px;
+  font-family: Helvetica, Arial;
+  font-weight:bold;
+  font-size:35px;
+  line-height:20;
+  text-align: left;
+}
