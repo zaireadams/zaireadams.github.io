@@ -407,11 +407,11 @@ div {
   width: 40%;
   position:absolute;
   left:75px;
-  top:200px;
+  top:600px;
   font-family: Helvetica, Arial;
   font-weight:bold;
   font-size:35px;
-  line-height:20;
+  line-height:50px;
   text-align: left;
-  top: 300px;
+  
 }
