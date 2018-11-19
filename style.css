@@ -22,7 +22,7 @@
 
 .title {
   position: absolute;
-  top: 20px;
+  top: 70px;
   left: 80px;
   font-size: 7.5vw;
   color: rgb(48,119,137);
@@ -32,7 +32,7 @@
 
 .admission {
     position: absolute;
-  top: 100px;
+  top: 150px;
   left: 1130px;
   font-size: 4.5vw;
   color: rgb(48,119,137);
@@ -41,7 +41,7 @@
 
 .price {
     position: absolute;
-  top: 200px;
+  top: 250px;
   left: 1125px;
   font-size: 2.5vw;
   color: rgb(48,119,137);
@@ -50,11 +50,23 @@
 
 
 .day  { position: absolute;
-  top: 100px;
+  top: 150px;
   left: 80px;
   font-size: 4.5vw;
   color: rgb(48,119,137);
   font-family: 'Teko', sans-serif;
 }
+
+
+.location {position: absolute;
+  top: 300px;
+  left: 80px;
+  font-size: 4.5vw;
+  color: rgb(48,119,137);
+  font-family: 'Teko', sans-serif;
+
+}
+
+
 
 
