@@ -4,96 +4,13 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("blackrain.jpg");
+  background-image: url("zigzagblackwallpaper.jpg");
   background-size: cover;
   background-position: center;
   }
 
-.Sleeping {
-		 position: absolute;
-  top: 330px;
-  left: 600px;
-  color: rgb(255,255,255);
-  font-family: 'Teko', sans-serif;
-  font-size: 54px
-}
-
-.sleepsoundspic {
-	position: absolute;
-	top: 400px;
-	left: 600px;
-}
-
-.Music {
-		 position: absolute;
-  top: 330px;
-  left: 185px;
-  color: rgb(255,255,255);
-  font-family: 'Teko', sans-serif;
-  font-size: 54px
-}
-
-.Motivational {
-		 position: absolute;
-  top: 330px;
-  left: 1000px;
-  color: rgb(255,255,255);
-  font-family: 'Teko', sans-serif;
-  font-size: 54px
-}
-
-
-
-
-
-.MusicMainpageimage {
-	position: absolute;
-	top: 400px;
-	left: 175px;
-}
-
-.aboogieimage {
-	position: absolute;
-	top: 400px;
-	left: 500px;
-}
-
-
-.DjDrama {
-	position: absolute;
-	top: 400px;
-	left: 800px;
-}
-
-.Motivationpic {
-	position: absolute;
-	top: 400px;
-	left: 1000px;
-}
-
-
-.NoPromises{
-	position: absolute;
-	top: 650px;
-	left: 500px;
-}
-
-.OnMe {
-	position: absolute;
-	top: 650px;
-	left: 175px;
-}
-
-.Wishing {
-	position: absolute;
-	top: 650px;
-	left: 800px;
-}
-
-.Rainsound {
-	position: absolute;
-	top: 650px;
-	left: 600px;
-}
-
-
+  .p {
+  	color: white;
+  	position: absolute;
+  	background-color: black;
+  }
