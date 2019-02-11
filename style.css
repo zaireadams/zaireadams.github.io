@@ -1,5 +1,15 @@
+
+html, body{
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+}
+
+
+
+
 .background {
-	 position: absolute;
+	 position:fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -7,10 +17,99 @@
   background-image: url("zigzagblackwallpaper.jpg");
   background-size: cover;
   background-position: center;
+  z-index: -1;
   }
 
-  .p {
+  .text {
   	color: white;
-  	position: absolute;
-  	background-color: black;
+    font-family: 'Oswald', sans-serif;
+    width: 86vw;
+    margin:40px;
+    font-size: 14px;
   }
+
+  .h2 {
+  	color: gold;
+    font-family: 'Oswald', sans-serif;
+  }
+
+
+ .box1 {
+ 	position:relative;
+ 	background-color: rgb(280,204,0);
+ 	width:100%;
+ 	height:50px;
+ 	top: 0:
+ 	left 0;
+ }
+
+ .h1 {
+ 	 	color: rgb(280,204,0);
+    font-family: 'Oswald', sans-serif;
+ }
+
+
+ .studio {
+ 	position: relative;
+ 	width:100%;
+ 	top: 0:
+ 	left 0;
+
+ 	
+ }
+
+
+.metroboominoption {
+    width: 100%;
+    filter: brightness(60%) contrast(140%);
+  }
+
+.murdabeatzoption {
+    width: 101%;
+    filter: brightness(60%) contrast(140%);
+  }
+
+  .boi1daoption {
+  width: 100%;
+  filter: brightness(60%) contrast(140%);
+}
+
+
+
+
+.metroboominmain {
+  position: relative;
+  width:100vw;
+  top: 0:
+  left 0;
+}
+
+
+.murdabeatzmain {
+  position: relative;
+  width:100vw;
+  top: 0:
+  left 0;
+}
+
+
+  .taykeithoption {
+  width: 100%;
+  filter: brightness(60%) contrast(140%);
+}
+
+.boi1damain {
+  position: relative;
+  width:100vw;
+  top: 0:
+  left 0;
+}
+
+
+
+.taykeithmain {
+  position: relative;
+  width:100vw;
+  top: 0:
+  left 0;
+}
