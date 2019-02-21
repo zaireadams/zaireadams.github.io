@@ -1,120 +1,52 @@
+body {
+background-color: white;
+animation-name: darken;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+animation-delay: 3s;
+}
 
-html, body{
-  margin:0;
-  padding:0;
-  overflow-x: hidden;
+.raindrop {
+	position: absolute;
+	background-color: rgb(220,20,80);
+	top:0px;
+	left: 1000px;
+	animation-name: raindrop;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	background-image: url(raindrop.png);
+	background-color: white;
 }
 
 
-
-
-.background {
-	 position:fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("zigzagblackwallpaper.jpg");
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  }
-
-  .text {
-  	color: white;
-    font-family: 'Oswald', sans-serif;
-    width: 86vw;
-    margin:40px;
-    font-size: 16px;
-    line-height: 30px
-    margin:center;
-  }
-
-  .h2 {
-  	color: gold;
-    font-family: 'Oswald', sans-serif;
-    margin: left;
-  }
-
-
- .box1 {
- 	position:relative;
- 	background-color: rgb(280,204,0);
- 	width:100%;
- 	height:50px;
- 	top: 0:
- 	left 0;
- }
-
- .h1 {
- 	 	color: rgb(280,204,0);
-    font-family: 'Oswald', sans-serif;
-    margin: 23px;
- }
-
-
- .studio {
- 	position: relative;
- 	width:100%;
- 	top: 0:
- 	left 0;
-
- 	
- }
-
-
-.metroboominoption {
-    width: 100%;
-    filter: brightness(60%) contrast(140%);
-  }
-
-.murdabeatzoption {
-    width: 101%;
-    filter: brightness(60%) contrast(140%);
-  }
-
-  .boi1daoption {
-  width: 100%;
-  filter: brightness(60%) contrast(140%);
+@keyframes darken {
+	0% {
+		background-color: white;
+	}
+	50% {
+		background-color: white;
+	}
+	100% {
+ 		background-color: white;
+	}
 }
 
 
+@keyframes raindrop {
+	0% {
+		top:0;
 
-
-.metroboominmain {
-  position: relative;
-  width:135vw;
-  top: 0:
-  left 0;
-  height: 125vw;
-}
-
-
-.murdabeatzmain {
-  position: relative;
-  width:100vw;
-  top: 0:
-  left 0;
-}
-
-
-  .taykeithoption {
-  width: 100%;
-  filter: brightness(60%) contrast(140%);
-}
-
-.boi1damain {
-  position: relative;
-  width:100vw;
-  top: 0:
-  left 0;
-}
-
-
-
-.taykeithmain {
-  position: relative;
-  width:100vw;
-  top: 0:
-  left 0;
+	}
+	
+	50% {
+		top: 90vh;
+		
+	}
+	100% {
+		top:0;
+		
+	}
 }
