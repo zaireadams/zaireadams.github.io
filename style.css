@@ -1,52 +1,134 @@
 body {
 background-color: white;
-animation-name: darken;
-animation-duration: 2s;
-animation-iteration-count: infinite;
-animation-fill-mode: forwards;
-animation-delay: 3s;
+
 }
 
-.raindrop {
+.littledrop {
 	position: absolute;
-	background-color: rgb(220,20,80);
 	top:0px;
 	left: 1000px;
-	animation-name: raindrop;
+	animation-name: falldown;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
 	animation-fill-mode: forwards;
-	animation-delay: 1s;
 	background-image: url(raindrop.png);
-	background-color: white;
+	background-color: transparent;
+	background-size: contain;
+	height: 40px;
+	width:40px; 
+}
+
+.tinydrop {
+	position: absolute;
+	top:0px;
+	left: 200px;
+	animation-name: falldown;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	background-image: url(raindrop.png);
+	background-color: transparent;
+	background-size: contain;
+	height: 40px;
+	width:40px; 
+}
+
+.middledrop {
+	position: absolute;
+	top:0px;
+	left: 500px;
+	animation-name: falldown;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	background-image: url(raindrop.png);
+	background-color: transparent;
+	background-size: contain;
+	height: 40px;
+	width:40px; 
 }
 
 
-@keyframes darken {
-	0% {
-		background-color: white;
-	}
-	50% {
-		background-color: white;
-	}
-	100% {
- 		background-color: white;
-	}
+
+
+.l1 {
+	animation-delay: 0s;
+}
+
+.l2 {
+	animation-delay: .3s;
+}
+
+.l3 {
+	animation-delay: .7s;
 }
 
 
-@keyframes raindrop {
+.t1 {
+	animation-delay: 0s;
+}
+
+.t2 {
+	animation-delay: 5s;
+}
+
+.t3 {
+	animation-delay: 10s;
+}
+
+
+.m1 {
+	animation-delay: 1s;
+}
+
+.m2 {
+	animation-delay: 3s;
+}
+
+.m3 {
+	animation-delay: 5s;
+}
+
+.waterscreen {
+	position: absolute;
+	bottom: 0px;
+	width: 100vw;
+	height:15px;
+    background-color: rgb(20, 34, 245);
+    animation-name: waterup;
+	animation-fill-mode: forwards;
+	animation-duration:40s;
+}
+
+
+
+@keyframes falldown {
 	0% {
 		top:0;
 
 	}
 	
-	50% {
-		top: 90vh;
 		
-	}
 	100% {
-		top:0;
+		top:90vh;
 		
 	}
 }
+
+
+@keyframes waterup {
+	
+0% {
+		height: 15px;
+
+	}
+	
+		
+	100% {
+		height: 500px;
+		
+	}
+
+}
+
+
