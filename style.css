@@ -65,11 +65,11 @@ background-color: white;
 
 
 .t1 {
-	animation-delay: 0s;
+	animation-delay: 8s;
 }
 
 .t2 {
-	animation-delay: 5s;
+	animation-delay: 15s;
 }
 
 .t3 {
@@ -78,7 +78,7 @@ background-color: white;
 
 
 .m1 {
-	animation-delay: 1s;
+	animation-delay: 0s;
 }
 
 .m2 {
@@ -98,6 +98,9 @@ background-color: white;
     animation-name: waterup;
 	animation-fill-mode: forwards;
 	animation-duration:40s;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
 }
 
 
@@ -132,3 +135,37 @@ background-color: white;
 }
 
 
+.alarmimage {
+	background-image: url(emptypool2.jpg);
+	position: absolute;
+	width: 100vw;
+	opacity: 0;
+}
+
+.alarmimage.alarm {
+	background-image: url(emptypool2.jpg);
+	position: absolute;
+	width: 100vw;
+	opacity: 0;
+}
+
+.snooze {
+	position: relative;
+  background-color: rgb(200,200,200);
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+  margin: 18px auto;  
+  line-height: 50px;
+  text-align: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+
+.snooze.alarm {
+	 background-color: rgb(255,20,40);
+  color: white;
+}
