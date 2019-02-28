@@ -140,13 +140,16 @@ background-color: white;
 	position: absolute;
 	width: 100vw;
 	opacity: 0;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .alarmimage.alarm {
 	background-image: url(emptypool2.jpg);
 	position: absolute;
 	width: 100vw;
-	opacity: 0;
+	opacity: 1;
 }
 
 .snooze {
@@ -162,10 +165,17 @@ background-color: white;
   font-weight: bold;
   cursor: pointer;
   transition: all 300ms ease-in-out;
+  opacity: 0;
 }
 
 
 .snooze.alarm {
 	 background-color: rgb(255,20,40);
   color: white;
+  opacity: 1;
+}
+
+
+.audio {
+
 }
