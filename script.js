@@ -12,11 +12,11 @@ $(document).ready(function()  {
     $(".alarmimage").addClass("alarm"); 
     $(".snooze").addClass("alarm");
     $("audio").get(0).play();
-  }, 5000);
+  }, 20000);
 
   $(".button").click(function() { 
     $(".alarmimage").removeClass("alarm");
-    $(".snooze").removeClass("alarm");
+    $(".snooze").removeClass("snooze");
     $("audio").get(0).pause()
     $("audio").get(0).currentTime=0;
   });
