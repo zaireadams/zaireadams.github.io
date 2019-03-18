@@ -1,181 +1,127 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 body {
-background-color: white;
-
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: black;
+  overflow: hidden;
 }
 
-.littledrop {
-	position: absolute;
-	top:0px;
-	left: 1000px;
-	animation-name: falldown;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-fill-mode: forwards;
-	background-image: url(raindrop.png);
-	background-color: transparent;
-	background-size: contain;
-	height: 40px;
-	width:40px; 
-}
-
-.tinydrop {
-	position: absolute;
-	top:0px;
-	left: 200px;
-	animation-name: falldown;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-fill-mode: forwards;
-	background-image: url(raindrop.png);
-	background-color: transparent;
-	background-size: contain;
-	height: 40px;
-	width:40px; 
-}
-
-.middledrop {
-	position: absolute;
-	top:0px;
-	left: 500px;
-	animation-name: falldown;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-fill-mode: forwards;
-	background-image: url(raindrop.png);
-	background-color: transparent;
-	background-size: contain;
-	height: 40px;
-	width:40px; 
-}
-
-
-
-
-.l1 {
-	animation-delay: 0s;
-}
-
-.l2 {
-	animation-delay: .3s;
-}
-
-.l3 {
-	animation-delay: .7s;
-}
-
-
-.t1 {
-	animation-delay: 8s;
-}
-
-.t2 {
-	animation-delay: 15s;
-}
-
-.t3 {
-	animation-delay: 10s;
-}
-
-
-.m1 {
-	animation-delay: 0s;
-}
-
-.m2 {
-	animation-delay: 3s;
-}
-
-.m3 {
-	animation-delay: 5s;
-}
-
-.waterscreen {
-	position: absolute;
-	bottom: 0px;
-	width: 100vw;
-	height:15px;
-    background-color: rgb(20, 34, 245);
-    animation-name: waterup;
-	animation-fill-mode: forwards;
-	animation-duration:40s;
-	background-size: cover;
-	background-repeat: no-repeat;
-	
-}
-
-
-
-@keyframes falldown {
-	0% {
-		top:0;
-
-	}
-	
-		
-	100% {
-		top:90vh;
-		
-	}
-}
-
-
-@keyframes waterup {
-	
-0% {
-		height: 15px;
-
-	}
-	
-		
-	100% {
-		height: 500px;
-		
-	}
-
-}
-
-
-.alarmimage {
-	background-image: url(emptypool2.jpg);
-	position: absolute;
-	width: 100vw;
-	opacity: 0;
-	height: 100vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.alarmimage.alarm {
-	background-image: url(emptypool2.jpg);
-	position: absolute;
-	width: 100vw;
-	opacity: 1;
-}
-
-.snooze {
-	position: relative;
-  background-color: rgb(200,200,200);
-  border-radius: 50px;
-  width: 200px;
-  height: 50px;
-  margin: 18px auto;  
-  line-height: 50px;
+.instructions {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  left: 0; right: 0; bottom: 34px;
+  margin: 0 auto;
+  line-height: 30px;
+  font-size: 16px;
   text-align: center;
-  font-family: Helvetica;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
+  color: white;
   opacity: 0;
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 500ms ease-in-out;
 }
 
-
-.snooze.alarm {
-	 background-color: rgb(255,20,40);
-  color: white;
+.instructions.show {
   opacity: 1;
 }
 
+.background {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  width: 1024px;
+  height: 748px;
+  background-image: url("./img/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
 
-.audio {
+.hero {
+  position: absolute;
+  bottom: 80px;
+  left: 400px;
+  width: 300px;
+  height: 300px;
+  background-image: url("./img/idling-sprite.png");
+  animation-name: spriteSheet;
+  animation-duration: 1000ms;
+  animation-timing-function: steps(2); /* number of frames in sprite (not counting the final blank space) */
+  background-position: 0 center;
+  background-size: cover;
+  transition-property: left, margin-bottom;
+  transition-timing-function: linear, ease-in-out;
+  pointer-events: none;
+  animation-iteration-count: infinite;
+}
 
+.hero.walking {
+  background-image: url("./img/walking-sprite.png");
+  animation-name: spriteSheet;
+  animation-duration: 300ms;
+  animation-timing-function: steps(4); /* number of frames in sprite (not counting the final blank space) */
+}
+
+.hero.left {
+  transform: scale(-1, 1);
+}
+
+.hero.jumping {
+  background-image: url("./img/jumping-sprite.png");
+  animation-name: spriteSheet;
+  animation-duration: 1000ms;
+  animation-timing-function: steps(4); /* number of frames in sprite (not counting the final blank space) */
+}
+
+.hero.attacking {
+  background-image: url("./img/attacking-sprite.png");
+  animation-name: spriteSheet;
+  animation-duration: 600ms;  /* set to same number in initialize() as well or it will look weird */
+  animation-timing-function: steps(4); /* number of frames in sprite (not counting the final blank space) */
+}
+
+.monster {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  bottom: 490px;
+  background-image: url("./img/monster-sprite.png");
+  background-size: cover;
+  animation-name: spriteSheet;
+  animation-duration: 500ms;
+  animation-timing-function: steps(2); /* number of frames in sprite (not counting the final blank space) */
+  animation-iteration-count: infinite;  
+  transition-property: right;
+  transition-timing-function: linear;
+}
+
+.preload-image {
+  position: absolute;
+  left: -99999px;
+  top: -99999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes spriteSheet {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 100% center;
+  }
 }
